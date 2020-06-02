@@ -8,18 +8,18 @@ public class PlayerCollide : MonoBehaviour
 {
 
     public GameObject virus;
-    
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -27,6 +27,7 @@ public class PlayerCollide : MonoBehaviour
         if (other.gameObject.tag == "Hurdle")
         {
             virus.transform.position = new Vector2(virus.transform.position.x, virus.transform.position.y - 0.5f);
+            Destroy(other.gameObject);
         }
         if (other.gameObject.tag == "Virus")
         {

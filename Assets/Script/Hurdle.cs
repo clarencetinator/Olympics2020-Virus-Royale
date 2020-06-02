@@ -5,7 +5,7 @@ using UnityEngine;
 public class Hurdle : MonoBehaviour
 {
 
-    public float speed = 10.0f;
+    public float speed = 7.0f;
     private Rigidbody2D rb;
     private Vector2 screenBounds;
     
